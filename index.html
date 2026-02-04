@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Para Maria</title>
+    <style>
+        body {
+            background-color: #1a1a1a;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: 'Courier New', Courier, monospace;
+            color: white;
+            text-align: center;
+        }
+        h1 {
+            font-size: 2rem;
+            margin-bottom: 50px;
+            text-shadow: 0 0 10px rgba(255,255,255,0.5);
+        }
+        .boton-prohibido {
+            background-color: #ff0000;
+            color: white;
+            border: none;
+            padding: 20px 40px;
+            font-size: 24px;
+            font-weight: bold;
+            border-radius: 50px;
+            cursor: pointer;
+            box-shadow: 0 0 20px #ff0000, 0 0 40px #ff0000;
+            animation: palpito 1.5s infinite;
+            text-decoration: none; /* Para que parezca botón aunque sea link */
+            transition: transform 0.2s;
+        }
+        .boton-prohibido:hover {
+            transform: scale(1.1);
+            background-color: #ff3333;
+        }
+        .boton-prohibido:active {
+            transform: scale(0.95);
+        }
+        @keyframes palpito {
+            0% { box-shadow: 0 0 20px #ff0000; }
+            50% { box-shadow: 0 0 40px #ff4d4d; }
+            100% { box-shadow: 0 0 20px #ff0000; }
+        }
+        .aviso {
+            margin-top: 20px;
+            font-size: 0.8rem;
+            opacity: 0.7;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Hola Maria, tengo un mensaje importante...</h1>
+    
+    <a href="sorpresa.html" class="boton-prohibido">⛔ NO TOCAR ⛔</a>
+
+    <p class="aviso">Por favor, obedece al botón.</p>
+
+</body>
+</html>
